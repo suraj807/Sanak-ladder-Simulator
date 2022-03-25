@@ -47,6 +47,11 @@ namespace Snake_and_Ladder_Problem
                     currentBoardPosition += dicenum;
                 }
 
+                if (currentBoardPosition > 100)
+                {
+                    Console.WriteLine("You are out of range");
+                    currentBoardPosition -= dicenum;
+                }
 
                 if (currentBoardPosition < 0)
                 {
