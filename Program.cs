@@ -13,8 +13,10 @@ namespace Snake_and_Ladder_Problem
         {
           
             Console.WriteLine("Welcome to Snake Ladder Game");
-           
-         Console.ReadLine();
+            Console.WriteLine("Let's Play");
+            Console.WriteLine("Currently you are at 0 Position");
+
+            Console.ReadLine();
         }
     }
 }
