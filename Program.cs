@@ -15,6 +15,7 @@ namespace Snake_and_Ladder_Problem
             int dicenum;
             int currentBoardPosition = 0;
             int totalBoardNumber = 100;
+            int countDiceRolls = 1;
 
 
             Console.WriteLine("snake leader game is starting 0 or ending 100 \n");
@@ -57,8 +58,11 @@ namespace Snake_and_Ladder_Problem
                 {
                     currentBoardPosition = 0;
                 }
+                countDiceRolls += 1;
                 Console.WriteLine($"\nYou are now at position : {currentBoardPosition}");
             }
+
+            Console.WriteLine($"Number of times dice rolls to win : {countDiceRolls}");
             Console.ReadLine();
         }
     }
